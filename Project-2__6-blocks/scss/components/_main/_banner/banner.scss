@@ -1,0 +1,54 @@
+.banner{
+  background-color: $color_bg_header;
+  padding: 73px 0 111px;
+
+  .banner__wrapper{
+    @extend %display_s_b;
+
+    .banner__text{
+      width: 50%;
+
+      h1{
+        margin-bottom: 17px;
+        @extend %banner_h1_attribute;
+
+        .banner_h1_l_s{
+          letter-spacing: $let_spac_banner_h1_span;
+        }
+      }
+
+      p{
+        margin-bottom: 53px;
+        width: 85%;
+        color: $color_text_p;
+        @extend %main_p_attribute;
+      }
+
+      .link_contact{
+        @extend %link_button_size;
+        background-color: $color_link_bg;
+
+        & a{
+          @extend %display_center;
+          @extend %link_button_a_attribute;
+          color: $color_text_link;
+        }
+
+        &:hover{
+          @include active_nav_link(0.3s,$color_menu_header)
+        }
+      }
+    }
+
+    .banner__video{
+      width: 50%;
+      @extend %display_end;
+
+      iframe{
+        width: 88%;
+        height: 100%;
+        box-shadow: 0 0 20px 0 $color_text_main;
+      }
+    }
+  }
+}

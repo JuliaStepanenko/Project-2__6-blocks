@@ -1,0 +1,223 @@
+@media (max-width:$content_width ) {
+  .contact {
+    margin-top: 80px;
+
+    .contact__wrapper {
+      .contact__title {
+        margin-bottom: 50px;
+
+        p {
+          width: 58%;
+        }
+      }
+
+      .contact__inform {
+        .contact__registration-form {
+          width: 60%;
+
+          form {
+            div {
+              input {
+                width: 47%;
+              }
+            }
+
+            textarea {
+              margin-bottom: 40px;
+            }
+          }
+        }
+
+        .contact__our-contacts {
+          width: 40%;
+
+          div {
+            padding: 120px 0 120px 60px;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:$content_width_tablet_lg ) {
+  .contact {
+    margin-top: 70px;
+
+    .contact__wrapper {
+      .contact__title {
+        margin-bottom: 40px;
+
+        h4 {
+          margin-bottom: 30px;
+          font-size: $font_size_banner_h1_media3;
+        }
+
+        p {
+          margin-bottom: 40px;
+          width: 100%;
+        }
+      }
+
+      .contact__inform {
+        .contact__registration-form {
+          form {
+            div {
+              margin-bottom: 35px;
+
+              input {
+                padding: 10px 35px;
+              }
+            }
+
+            textarea {
+              margin-bottom: 35px;
+              height: 200px;
+              padding: 35px 35px;
+            }
+          }
+
+          button {
+            padding: 17px 0;
+          }
+        }
+
+        .contact__our-contacts {
+          width: 35%;
+
+          div {
+            padding: 75px 0 75px 20px;
+            width: 85%;
+
+            p {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:$content_width_tablet ) {
+  .contact {
+    margin-top: 50px;
+
+    .contact__wrapper {
+      .contact__title {
+        @include display_column('');
+
+        h4 {
+          margin-bottom: 20px;
+        }
+
+        p {
+          margin-bottom: 20px;
+          width: 100%;
+        }
+      }
+
+      .contact__inform {
+        @include display_column('');
+        flex-direction: column-reverse;
+
+        .contact__registration-form {
+          width: 100%;
+
+          form {
+            div {
+              margin-bottom: 10px;
+              @include display_column('');
+
+              input {
+                width: 100%;
+                padding: 10px 10px;
+                margin-bottom: 15px;
+              }
+            }
+
+            textarea {
+              padding: 20px 20px;
+              margin-bottom: 20px;
+            }
+          }
+        }
+
+        .contact__our-contacts {
+          width: 100%;
+          margin-bottom: 30px;
+
+          div {
+            text-align: center;
+            padding: 30px 0 25px;
+            width: 100%;
+
+            h5 {
+              margin-bottom: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:$content_width_phone ) {
+  .contact {
+    .contact__wrapper {
+      .contact__title {
+        margin-bottom: 30px;
+
+        p {
+          width: 102%;
+          line-height: $l_h_prod_list;
+        }
+      }
+
+      .contact__inform {
+        .contact__registration-form {
+          form {
+            div {
+              input {
+                margin: 10px 0 10px;
+                font-size: $font_size_main;
+                line-height: initial;
+              }
+            }
+
+            textarea {
+              margin-bottom: 20px;
+              height: 150px;
+              padding: 10px;
+              font-size: $font_size_main;
+              line-height: initial;
+            }
+          }
+
+          button {
+            padding: 10px 0;
+            font-size: $font_size_main;
+          }
+        }
+
+        .contact__our-contacts {
+          margin-bottom: 20px;
+
+          div {
+            h5 {
+              margin-bottom: 20px;
+              font-size: $font_size_main_p;
+            }
+
+            p {
+              font-size: $font_size_main;
+            }
+          }
+        }
+      }
+    }
+  }
+}

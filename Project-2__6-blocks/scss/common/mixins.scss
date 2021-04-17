@@ -1,0 +1,9 @@
+@mixin active_nav_link($active_nav_trans, $active_nav_bg){
+  transition: $active_nav_trans;
+  background-color: $active_nav_bg;
+}
+
+@mixin active_list($active_list_trans, $active_list_col){
+  transition: $active_list_trans;
+  color: $active_list_col;
+}

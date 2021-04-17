@@ -1,0 +1,11 @@
+body{
+  font-family: $content_font_main,sans-serif;
+  font-size: $font_size_main;
+}
+
+.container {
+  max-width: $content_width;
+  margin: 0 auto;
+  padding: 0 $content_padding_x;
+  box-sizing: border-box;
+}

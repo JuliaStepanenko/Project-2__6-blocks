@@ -1,0 +1,58 @@
+.subscribe-messages {
+  margin-top: 110px;
+  background-image: url("../images/background/subscribe_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 140px 0;
+
+  .subscribe-messages__wrapper {
+    @extend %display_center;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 30px;
+      color: $color_subskr_text;
+      @extend %subscribe_h3;
+    }
+
+    p {
+      margin-bottom: 60px;
+      color: $color_subskr_text;
+      @extend %main_p_attribute;
+    }
+
+    form {
+      display: flex;
+      width: 57%;
+
+      input {
+          width: 70%;
+          margin-right: 20px;
+          padding: 25px 35px;
+          background-color: $color_text_link;
+          border-radius: 5px;
+          color: $color_our_team_bg_img;
+          @extend %subscribe_input;
+
+        &:hover {
+            background-color: $color_menu_text;
+        }
+      }
+
+      button {
+          width: 30%;
+          padding: 25px 55px;
+          background-color: $color_link_bg;
+          border-radius: 5px;
+          text-transform: uppercase;
+          color: $color_text_link;
+          @extend %subscribe_button;
+
+        &:hover {
+            background-color: $color_menu_text;
+            color: $color_text_main;
+        }
+      }
+    }
+  }
+}

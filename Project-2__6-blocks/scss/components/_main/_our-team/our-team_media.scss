@@ -1,0 +1,191 @@
+@media (max-width:$content_width ) {
+  .our-team{
+    margin-top: 90px;
+
+    .our-team__wrapper{
+      .our-team__title{
+        margin-bottom: 50px;
+
+        p{
+          width: 50%;
+        }
+      }
+
+      .our-team__employee-page {
+        .our-team__employee-list{
+          div{
+            height: 160px;
+
+            .employee-list-name{
+              margin-left: 3px;
+              width: 97%;
+              top: 121px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:$content_width_tablet_lg ) {
+  .our-team{
+    margin-top: 50px;
+
+    .our-team__wrapper{
+      .our-team__title{
+        margin-bottom: 30px;
+
+        h2{
+          margin-bottom: 15px;
+          font-size: $font_size_banner_h1_media3;
+        }
+
+        p{
+          margin-bottom: 20px;
+        }
+      }
+
+      .our-team__employee-page {
+        .our-team__employee-info{
+          h3{
+            margin: 10px 0 15px;
+          }
+
+          p{
+            margin-bottom: 20px;
+            width: 90%;
+          }
+
+          .our-team__employee-contact{
+            margin-bottom: 35px;
+          }
+        }
+
+        .our-team__employee-list{
+          div{
+            height: 130px;
+
+            .employee-list-name{
+              height: 25px;
+              top: 103px;
+
+              a{
+                padding: 5px 0;
+                text-transform: initial;
+                font-size: $font_size_main;
+                font-weight: initial;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:$content_width_tablet ) {
+  .our-team{
+    .our-team__wrapper{
+      .our-team__title{
+        @include display_column('');
+
+        p{
+          width: 100%;
+        }
+      }
+
+      .our-team__employee-page {
+        @include display_column('');
+
+        .our-team__employee-img {
+          margin-bottom: 30px;
+          width: 50%;
+          height: 300px;
+        }
+
+        .our-team__employee-info{
+          padding-left: 0;
+          width: 100%;
+
+          h3{
+            margin: 0 0 15px 0;
+            font-size: $font_size_prod_list;
+          }
+
+          p{
+            width: 100%;
+          }
+
+          .our-team__employee-contact{
+            ul{
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:$content_width_phone ) {
+  .our-team{
+    .our-team__wrapper{
+      .our-team__title{
+        p{
+          line-height: $l_h_prod_list;
+        }
+      }
+
+      .our-team__employee-page {
+        .our-team__employee-img {
+          height: 200px;
+        }
+
+        .our-team__employee-info{
+          padding-left: 0;
+
+          p{
+            line-height: $l_h_prod_list;
+          }
+
+          .our-team__employee-contact{
+            ul{
+              li{
+                width: 50%;
+                margin-right: 15px;
+              }
+            }
+          }
+        }
+
+        .our-team__employee-list{
+          justify-content: space-around;
+          width: 100%;
+
+          div{
+            width: 42%;
+            height: 130px;
+            margin-bottom: 10px;
+
+            .employee-list-name{
+              margin-left: 3px;
+              top: 102px;
+
+              a{
+                padding: 5px 0;
+                text-transform: initial;
+                font-size: $font_size_main;
+                font-weight: initial;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

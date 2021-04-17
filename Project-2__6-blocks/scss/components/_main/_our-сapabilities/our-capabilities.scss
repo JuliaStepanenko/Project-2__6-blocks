@@ -1,0 +1,84 @@
+.our-capabilities {
+  margin-top: 108px;
+
+  .our-capabilities__wrapper {
+    padding-bottom: 102px;
+    border-bottom: solid 2px $color_capab_break_line;
+    @extend %display_s_b;
+
+    .our-capabilities__text {
+      width: 50%;
+
+      h2 {
+        margin-bottom: 30px;
+        @extend %main_h2_attribute;
+        line-height: $l_h_capab_h2;
+        letter-spacing: initial;
+      }
+
+      p {
+        margin-bottom: 50px;
+        width: 82%;
+        color: $color_text_main;
+        @extend %main_p_attribute;
+      }
+
+      .link_learn-more {
+        @extend %link_button_size;
+        border: 2px solid $color_link_bg;
+
+        & a {
+          @extend %display_center;
+          @extend %link_button_a_attribute;
+          color: $color_link_bg;
+
+          &:hover{
+            color:$color_text_main;
+          }
+        }
+
+        &:hover{
+          @include active_nav_link(0.3s, initial);
+          border: 2px solid $color_menu_header;
+        }
+      }
+    }
+
+    .our-capabilities__items-wrap {
+      width: 50%;
+      padding-left: 15px;
+      @extend %display_center;
+
+      .our-capabilities__items {
+        width: 50%;
+
+        .settings,
+        .pencil{
+          margin-bottom: 30px;
+        }
+
+        .diamond,
+        .truck{
+          margin-bottom: 40px;
+        }
+
+        h4{
+          margin-bottom: 17px;
+          font-size: $font_size_capab_item;
+          @extend %main_h4_a_attribute;
+        }
+
+        p{
+          width: 100%;
+          color: $color_text_p;
+          @extend %main_p_attribute;
+        }
+
+        &.settings_it,
+        &.pencil_it{
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+@media (max-width:$content_width ) {
+  .our-capabilities {
+    margin-top: 90px;
+
+    .our-capabilities__wrapper {
+      padding-bottom: 90px;
+
+      .our-capabilities__text {
+        h2 {
+          letter-spacing: $let_spac_main;
+        }
+
+        p {
+          width: 92%;
+        }
+      }
+
+      .our-capabilities__items-wrap {
+        .our-capabilities__items {
+          p{
+            padding-right: 37px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:$content_width_tablet_lg ) {
+  .our-capabilities {
+    margin-top: 50px;
+
+    .our-capabilities__wrapper {
+      padding-bottom: 50px;
+
+      .our-capabilities__text {
+        h2 {
+          margin-bottom: 15px;
+          font-size: $font_size_banner_h1_media3;
+          line-height: $font_size_capab_h2;
+        }
+
+        p {
+          margin-bottom: 30px;
+          width: 85%;
+        }
+      }
+
+      .our-capabilities__items-wrap {
+        @include display_column('');
+        padding-left: 0;
+
+        .our-capabilities__items {
+          width: 100%;
+
+          .settings,
+          .pencil{
+            margin-bottom: 20px;
+          }
+
+          .diamond,
+          .truck{
+            margin-bottom: 25px;
+          }
+
+          h4{
+            margin-bottom: 10px;
+            font-size: $font_size_prod_list;
+            letter-spacing:initial;
+          }
+
+          p{
+            padding-right: 0;
+          }
+
+          &.diamond_it{
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:$content_width_tablet ) {
+  .our-capabilities {
+    .our-capabilities__wrapper {
+      @include display_column('');
+
+      .our-capabilities__text {
+        margin-bottom: 40px;
+        width: 100%;
+        @include display_column('');
+
+        p{
+          width: 81%;
+        }
+      }
+
+      .our-capabilities__items-wrap {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (max-width:$content_width_phone ) {
+  .our-capabilities {
+    .our-capabilities__wrapper {
+
+      .our-capabilities__text {
+        margin-bottom: 30px;
+
+        h2 {
+          font-size: $font_size_capab_item;
+          line-height: $l_h_banner_p;
+        }
+
+        p {
+          margin-bottom: 30px;
+          line-height: $l_h_prod_list;
+        }
+      }
+
+      .our-capabilities__items-wrap {
+        .our-capabilities__items {
+
+          .settings,
+          .pencil{
+            margin-bottom: 15px;
+          }
+
+          .diamond,
+          .truck{
+            margin-bottom: 20px;
+          }
+
+          p{
+            width: 100%;
+            line-height: $l_h_prod_list;
+          }
+
+          &.settings_it,
+          &.pencil_it{
+            margin-bottom: 30px;
+          }
+        }
+        .diamond_it{
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

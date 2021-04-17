@@ -1,0 +1,24 @@
+@media (max-width:$content_width ) {
+  .container {
+    max-width: $content_width_tablet_lg;
+  }
+}
+
+@media (max-width:$content_width_tablet_lg ) {
+  .container {
+    max-width: $content_width_tablet;
+  }
+}
+
+@media (max-width:$content_width_tablet ) {
+  .container {
+    max-width: $content_width_phone;
+    padding: 0 $content_padding_x_media;
+  }
+}
+
+@media (max-width:$content_width_phone ) {
+  .container {
+    max-width: $content_width_min;
+  }
+}

@@ -1,0 +1,91 @@
+%display_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+%display_s_b{
+  display: flex;
+  justify-content: space-between;
+}
+
+%display_end{
+  display: flex;
+  justify-content: flex-end;
+}
+
+%link_button_size{
+  width: 227px;
+  height: 55px;
+  border-radius: 5px;
+}
+
+%link_button_a_attribute{
+  padding: 18px 0 20px;
+  font-size: $font_size_link;
+  font-weight: $font_weight_bold;
+}
+
+%break_line {
+  width: 132px;
+  height: 3px;
+  background-color: $color_link_bg;
+}
+
+%main_p_attribute{
+  font-size: $font_size_main_p;
+  font-weight: $font_weight_normal;
+  line-height: $l_h_banner_p;
+}
+
+%banner_h1_attribute{
+  color:$color_text_main;
+  font-family:$ff_banner_h1;
+  font-size: $font_size_banner_h1;
+  font-weight: $font_weight_normal;
+  line-height: $l_h_banner_h1;
+  letter-spacing: $let_spac_banner_h1;
+  text-transform: uppercase;
+}
+
+%main_h2_attribute{
+  color: $color_text_h2_capab;
+  font-size: $font_size_capab_h2;
+  font-weight: $font_weight_bold;
+  text-transform: uppercase;
+}
+
+%main_h4_a_attribute{
+  color: $color_text_p;
+  font-family: $ff_item;
+  font-weight: $font_weight_normal;
+  letter-spacing:$let_spac_main;
+}
+
+%our_team_h3{
+  text-transform: uppercase;
+  color: $color_text_h2_capab;
+  font-family: $ff_item;
+  font-size: $font_size_our_teem_info;
+  font-weight: $font_weight_normal;
+}
+
+%subscribe_h3{
+  font-size: $font_size_capab_h2;
+  font-weight: $font_weight_bold;
+  line-height: $l_h_news_but;
+  letter-spacing: $let_spac_main;
+}
+
+%subscribe_input{
+  font-size: $font_size_main_p;
+  font-weight: $font_weight_normal;
+  line-height: $l_h_prod_list;
+}
+
+%subscribe_button{
+  font-size: $font_size_link;
+  font-weight: $font_weight_bold;
+  line-height: $l_h_news_but;
+}

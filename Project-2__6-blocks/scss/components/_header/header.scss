@@ -1,0 +1,32 @@
+.header{
+  padding: 30px 0;
+  background-color: $color_bg_header;
+
+  .header__nav{
+    background-color: $color_menu_header;
+
+    menu{
+      @extend %display_center;
+      li{
+        list-style: none;
+
+        a{
+          display: block;
+          padding: 35px 25px;
+          color: $color_menu_text;
+          font-weight: $font_weight_bold;
+          letter-spacing:$let_spac_main;
+          text-transform: uppercase;
+
+          &.active_nav{
+            background-color: $color_menu_head_act;
+          }
+
+          &:hover{
+            @include active_nav_link(0.2s,$color_menu_head_act)
+          }
+        }
+      }
+    }
+  }
+}

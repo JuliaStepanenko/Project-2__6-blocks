@@ -1,0 +1,116 @@
+.our-team{
+  margin-top: 110px;
+
+  .our-team__wrapper{
+    .our-team__title{
+      margin-bottom: 70px;
+
+      h2{
+        margin-bottom: 30px;
+        @extend %main_h2_attribute;
+      }
+
+      p{
+        margin-bottom: 30px;
+        width: 36%;
+        color: $color_text_p;
+        @extend %main_p_attribute;
+      }
+
+      .break_line{
+        @extend %break_line;
+      }
+    }
+
+    .our-team__employee-page {
+      display: flex;
+
+      .our-team__employee-img {
+        width: 26%;
+        background-image: url("../images/our_product_item.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .our-team__employee-info{
+        padding-left: 70px;
+        width: 74%;
+
+        h3{
+          margin: 15px 0 25px;
+          @extend %our_team_h3;
+        }
+
+        p{
+          margin-bottom: 35px;
+          width: 74%;
+          color: $color_text_p;
+          @extend %main_p_attribute;
+        }
+
+        .our-team__employee-contact{
+          margin-bottom: 60px;
+
+          ul{
+            display: flex;
+            li{
+              margin-right: 30px;
+
+              &:last-child{
+                margin-right: 0;
+              }
+              a{
+                color: $color_text_h2_capab;
+                font-size: $font_size_link;
+                line-height: $l_h_prod_list;
+                font-style: italic;
+              }
+            }
+          }
+        }
+      }
+
+      .our-team__employee-list{
+        @extend %display_s_b;
+        flex-wrap: wrap;
+
+        div{
+          position: relative;
+          width: 24%;
+          height: 214px;
+
+          .employee-list-img{
+            width: 100%;
+            background-image: url("../images/our_product_item.png");
+          }
+
+          .employee-list-name{
+            position: absolute;
+            text-align: center;
+            margin-left: 2px;
+            width: 98%;
+            height: 37px;
+            background-color: $color_our_team_bg_img;
+            top: 176px;
+            z-index: -100;
+
+              a{
+                display: block;
+                padding: 9px 0;
+                text-transform: uppercase;
+                color: $color_text_link;
+                font-family: $ff_item;
+                font-size: $font_size_link;
+                font-weight: $font_weight_normal;
+              }
+          }
+
+          &:hover .employee-list-name,.active_img {
+            z-index: 100;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
